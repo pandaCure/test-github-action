@@ -1,0 +1,10 @@
+name: Schedule Demo
+on:
+  schedule:
+  - cron: '* * * * *'
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo: "hello zzy"
